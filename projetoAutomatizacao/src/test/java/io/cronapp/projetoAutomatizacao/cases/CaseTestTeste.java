@@ -20,11 +20,22 @@ public class CaseTestTeste extends GerenciamentoDriver{
 		login = new Login(driver);
 		menu = new MenuSuperiorIcone(driver);
 		login.logar();
+		System.out.println("login ok");
 		login.esperaComponente(15);
 		//login.btnNovoProjeto();
 		menu.btnNovoProjeto();
 	}
 	
-
+	
+	@Test
+	public void inicio1(){
+		login = new Login(driver);
+		menu = new MenuSuperiorIcone(driver);
+		login.logar();
+		System.out.println("login ok");
+		login.esperaComponente(15);
+		//login.btnNovoProjeto();
+		menu.btnNovoProjeto();
+	}
 
 }
