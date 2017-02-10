@@ -13,18 +13,17 @@ import io.cronapp.projetoAutomatizacao.util.GerenciamentoDriver;
  * Responsavel por:
  * 
  */
-
 public class Paas_94 extends GerenciamentoDriver{
 	
 	Login login = new Login(driver);
 	MenuSuperiorIcone menu = new MenuSuperiorIcone(driver);
 	
-	//@Test
+	@Test
 	public void paas_94(){
 		System.out.println("Caso de teste > Paas_94");
 		login.logar();
 		login.esperaComponente(15);
-		menu.btnNovoProjeto();
+		menu.iconeAbrirProjeto();
 		System.out.println("Caso de teste > Paas_94");
 	}
 	
