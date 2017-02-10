@@ -8,12 +8,6 @@ public class GerenciamentoDriver {
 	
 	protected FirefoxDriver driver;
 	
-	
-//	public GerenciamentoDriver(FirefoxDriver driver){
-//		System.setProperty("webdriver.gecko.driver", "C:\\software\\libs\\geckodriver-v0.10.0-win64\\geckodriver.exe");
-//		this.driver = driver;
-//	}
-//	
 	public GerenciamentoDriver(){
 		System.setProperty("webdriver.gecko.driver", "C:\\software\\libs\\geckodriver-v0.10.0-win64\\geckodriver.exe");
 		this.driver = new FirefoxDriver();
@@ -23,14 +17,13 @@ public class GerenciamentoDriver {
 	public void inicializaNavegador() throws InterruptedException{
 		driver.get("https://ide.cronapp.io/workspace");
 		driver.manage().window().maximize();
-		System.out.println("Navegador iniciado OK");
 		Thread.sleep(5000);
 	}
 	
 	@After
 	public void encerraNavegador(){
 		driver.close();
+		driver.quit();
 	}
 	
-
 }
