@@ -18,3 +18,5 @@ projetoAutomatizacao/projetoAutomatizacao/src/test/java/io/cronapp/projetoAutoma
 
 Exemplo:
 System.setProperty("webdriver.gecko.driver", "C:\\geckodriver-v0.10.0-win64\\geckodriver.exe");
+
+Observação utilizar a versão mais atual do navegador Mozilla a versão utilizada no desenvolvimento dos testes foi 51.0.1
