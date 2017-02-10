@@ -7,9 +7,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class GerenciamentoDriver {
 	
 	protected FirefoxDriver driver;
+	Config configuracao = new Config();
 	
 	public GerenciamentoDriver(){
-		System.setProperty("webdriver.gecko.driver", "C:\\software\\libs\\geckodriver-v0.10.0-win64\\geckodriver.exe");
+		System.setProperty(configuracao.pacoteGeckodrive, configuracao.conexao);
 		this.driver = new FirefoxDriver();
 	}
 	
