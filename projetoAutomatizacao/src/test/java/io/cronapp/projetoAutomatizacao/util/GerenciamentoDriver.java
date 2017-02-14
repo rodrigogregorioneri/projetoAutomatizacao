@@ -15,7 +15,7 @@ public class GerenciamentoDriver {
 	
 	@Before
 	public void inicializaNavegador() throws InterruptedException{
-		driver.get("https://ide.cronapp.io/workspace");
+		driver.get("https://ide-i.cronapp.io/workspace");
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
 	}
