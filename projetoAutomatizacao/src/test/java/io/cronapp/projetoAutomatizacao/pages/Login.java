@@ -23,13 +23,16 @@ public class Login {
 	public void campoNome(){
 		esperaComponente(15);
 		elemento = driver.findElement(By.name("username"));
+
+
 		elemento.sendKeys("testertesteiro@yahoo.com");
+
 	}
 
 	public void campoSenha(){
 		esperaComponente(1);
 		elemento = driver.findElement(By.name("password"));
-		elemento.sendKeys("teste");
+		elemento.sendKeys("insira a senha aqui");
 
 	}
 
