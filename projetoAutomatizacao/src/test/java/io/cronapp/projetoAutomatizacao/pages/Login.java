@@ -23,7 +23,10 @@ public class Login {
 	public void campoNome(){
 		esperaComponente(15);
 		elemento = driver.findElement(By.name("username"));
-		elemento.sendKeys("insira o email aqui");
+
+
+		elemento.sendKeys("testertesteiro@yahoo.com");
+
 	}
 
 	public void campoSenha(){
@@ -51,5 +54,5 @@ public class Login {
 		campoSenha();
 		btnEntrar();
 	}
-
+	
 }
