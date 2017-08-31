@@ -21,7 +21,7 @@ public class MenuSuperiorIcone {
 		this.driver = driver;
 	}
 
-	public void btnNovoProjeto(){
+	public void iconeNovoProjeto(){
 		elemento = driver.findElementByCssSelector("*[ui-id='workspaceview-newProject']");
 		elemento.click();
 	}
@@ -31,7 +31,12 @@ public class MenuSuperiorIcone {
 		elemento.click();
 	}
 
-	public void iconeSalvarTodosProjetos(){  
+	public void iconeSalvar(){  
+//		elemento = driver.findElementByCssSelector("*[ui-id='']");
+//		elemento.click();
+	}
+	
+	public void iconeSalvarTodos(){  
 //		elemento = driver.findElementByCssSelector("*[ui-id='']");
 //		elemento.click();
 	}
@@ -87,13 +92,13 @@ public class MenuSuperiorIcone {
 	}
 
 	public void iconeTerminal(){
-//		elemento = driver.findElementByCssSelector("*[ui-id='']");
-//		elemento.click();		
+		elemento = driver.findElementByCssSelector("*[ui-id='openProject-terminal']");
+		elemento.click();		
 	}
 
 	public void iconeDatasource(){
-//		elemento = driver.findElementByCssSelector("*[ui-id='']");
-//		elemento.click();		
+		elemento = driver.findElementByCssSelector("*[ui-id='openProject-datasource']");
+		elemento.click();		
 	}
 
 	public void iconeServiçosExpostos(){
@@ -122,8 +127,8 @@ public class MenuSuperiorIcone {
 	}
 
 	public void iconeIniciarAssistente(){
-//		elemento = driver.findElementByCssSelector("*[ui-id='']");
-//		elemento.click();		
+		elemento = driver.findElementByCssSelector("*[ui-id='wizardPageWalkThrough-div']");
+		elemento.click();		
 	}
 
 }
