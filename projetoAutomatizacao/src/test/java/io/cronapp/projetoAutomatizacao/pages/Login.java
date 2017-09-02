@@ -24,10 +24,11 @@ public class Login {
 		esperaComponente(15);
 		elemento = driver.findElement(By.name("username"));
 
+		elemento.sendKeys("insira o email aqui");
 
-		elemento.sendKeys("testertesteiro@yahoo.com");
 
-	}
+
+
 
 	public void campoSenha(){
 		esperaComponente(1);
